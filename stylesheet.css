@@ -1,0 +1,119 @@
+/* Mulai code Anda dari baris terakhir */
+
+* {
+  box-sizing: border-box;
+}
+
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lucida Grande";
+}
+
+a {
+  text-decoration: none;
+}
+
+.paket {
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #f7f7f7;
+  border-top: 5px solid #fec73b;
+}
+
+.paket h1 {
+  font-weight: normal;
+  text-align: center;
+  opacity: 0.7;
+  font-size: 40px;
+  letter-spacing: 3px;
+  }
+.section{
+    height: 80vh;
+    display: flex;
+    border-bottom: 5px solid #fec73b;
+}
+.city{
+    flex: 1;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    transition: .6s;
+}
+
+.city:hover{
+    flex: 3;
+}
+
+.city-pic{
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    filter: grayscale(80%);
+    transition: .3s;
+}
+
+.city:hover .city-pic{
+    filter: grayscale(0);
+}
+
+.city-info{
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    width: 100%;
+    opacity: 0;
+    transition: .2s;
+}
+
+.city:hover .city-info{
+    opacity: 1;
+    bottom: 60px;
+    transition-delay: .6s;
+}
+
+.city-info h2{
+    font-size: 80px;
+    font-weight: bold;
+    font-style: "Arial Black"; 
+    color: #fff;
+    margin-bottom: 70px
+}
+
+.city-info p{
+    display: inline-block;
+    padding: 10px 14px;
+    color: #fff;
+    background-color: #080b05;
+    opacity: 0.8;
+    text-align: center;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    transition: .3s linear;
+}
+  
+.loct a{
+    display: inline-block;
+    padding: 18px 10px;
+    color: #333;
+    background-color: #55acee;
+    line-height: 0px;
+    opacity: 0.8;
+    text-align: center;
+    border-radius: 4px;
+    margin: 0 6px;
+    font-size: 18px;
+    transition: .3s linear;
+}
+
+
